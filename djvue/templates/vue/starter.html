@@ -3,10 +3,10 @@
 <script>
     let uploadURL = '{% url "djvue:file_upload" %}'
 </script>
-<script src="{% static 'vue/js/vue.js' %}"></script>
-<script src="{% static 'vue/js/vee-validate.full.js' %}"></script>
-<script src="{% static 'vue/js/axios.js' %}"></script>
-<script src="{% static 'vue/js/lodash.js' %}"></script>
+<script src="{% static 'vue/js/vue.min.js' %}"></script>
+<script src="{% static 'vue/js/vee-validate.full.min.js' %}"></script>
+<script src="{% static 'vue/js/axios.min.js' %}"></script>
+<script src="{% static 'vue/js/lodash.min.js' %}"></script>
 <script>
 
     Vue.component("validation-provider", VeeValidate.ValidationProvider)
@@ -26,4 +26,4 @@
     axios.defaults.xsrfHeaderName = "X-CSRFTOKEN"
 
 </script>
-<script src="{% static 'vue/js/script.js' %}"></script>
+<script src="{% static 'vue/js/script.min.js' %}"></script>
